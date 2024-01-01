@@ -4,8 +4,8 @@
 Intake::Intake(std::vector<pros::Motor> motor_ports, pros::motor_brake_mode_e brake_mode) : intake_motors(motor_ports) {
     brake_mode = brake_mode;
 };
-
-// runs WHEN controller.get_digital(DIGITAL_R1)
+//
+// runs whenn controller.get_digital(DIGITAL_R1)
 void Intake::intake_the_award() {
     intake_motors.move(-127);
 }
